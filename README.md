@@ -2,6 +2,8 @@
 
 A Flask-based NIFTY investment strategy dashboard for SIP backtesting, dynamic asset allocation, portfolio growth analysis, drawdown comparison, and investor-friendly reporting.
 
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/ChetanO07/nifty-sip-allocation-backtester)
+
 ## Features
 
 - SIP wealth strategy backtesting across NIFTY market-cap and sector indices.
