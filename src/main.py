@@ -1794,6 +1794,11 @@ def index():
     )
 
 
+@app.route("/health", methods=["GET"])
+def health():
+    return jsonify({"status": "ok"})
+
+
 @app.route("/parse-dataset-dates", methods=["POST"])
 def parse_dataset_dates():
     """

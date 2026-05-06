@@ -33,6 +33,28 @@ Then open:
 http://127.0.0.1:5050
 ```
 
+## Deploy on Render
+
+This repo includes `render.yaml`, so it can be deployed from GitHub as a Render Web Service.
+
+1. Go to Render and create a new Blueprint or Web Service from this GitHub repository.
+2. Select branch `main`.
+3. Use the Python runtime.
+4. Keep these commands if Render asks for them:
+
+```text
+Build Command: pip install -r requirements.txt
+Start Command: gunicorn --bind 0.0.0.0:$PORT --workers 1 --timeout 300 src.main:app
+```
+
+After deployment, Render provides a permanent URL like:
+
+```text
+https://nifty-sip-allocation-backtester.onrender.com
+```
+
+Free Render services can sleep after inactivity, but the public URL remains the same.
+
 ## Project Structure
 
 ```text
